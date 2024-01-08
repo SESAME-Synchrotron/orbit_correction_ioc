@@ -1,0 +1,120 @@
+record(mbbo, "SOFB:EnergyLevel")
+{
+  field(DESC, "Energy Level")
+  field(ZRST, "800")   field(ZRVL, 800)
+  field(ONST, "2500")  field(ONVL, 2500)
+  field(EGU,  "MeV")
+  field(VAL,  0)
+  field(PINI, "YES")
+}
+
+record(ao, "SOFB:NumIterations")
+{
+  field(DESC, "Number of Iterations")
+  field(VAL, -1) # indicating Infinite
+  field(PINI, YES)
+}
+
+record(ao, "SOFB:NumSingularVals")
+{
+  field(DESC, "Number of Singular Values")
+  field(VAL, 40)
+  field(PINI, YES)
+}
+
+record(ao, "SOFB:MaxFreqChange")
+{
+  field(DESC, "Maximum change in frequency")
+  field(VAL, 1000)
+  field(EGU, "Hz")
+  field(PINI, YES)
+}
+
+record(ao, "SOFB:MaxCurrentChange")
+{
+  field(DESC, "Maximum change in current")
+  field(VAL, 0.1)
+  field(EGU, "A")
+  field(PINI, YES)
+}
+
+record(ao, "SOFB:MaxReadFail")
+{
+  field(DESC, "Maximum read fails")
+  field(VAL, 5)
+  field(PINI, YES)
+}
+
+record(bo, "SOFB:IncludeRf")
+{
+  field(DESC, "Include Rf?")
+  field(VAL, 1)
+  field(PINI, YES)
+}
+
+record(bo, "SOFB:ApplyRegularization")
+{
+  field(DESC, "Apply Regularization?")
+  field(VAL, 0)
+  field(PINI, YES)
+}
+
+record(bo, "SOFB:OnlyRf")
+{
+  field(DESC, "Run RF Only?")
+  field(VAL, 0)
+  field(PINI, YES)
+}
+
+record(bo, "SOFB:NoSetPv")
+{
+  field(DESC, "Do not set Pv flag")
+  field(VAL, 0)
+  field(PINI, YES)
+}
+
+record(mbbo, "SOFB:CorrectionStatus")
+{
+  field(DESC, "Correction Status")
+  field(ZRST, "Success") field(ZRVL, 0)
+  field(ONST, "Running") field(ONVL, 1)
+  field(TWST, "Fail") field(TWVL, 2)
+  field(THST, "Debug") field(THVL, 3)
+  field(VAL,  0)
+  field(PINI, "YES")
+}
+
+record(mbbo, "SOFB:MovAvg:Algo")
+{
+  field(DESC, "Moving Average Algorithm")
+  field(ZRST, "ema")     field(ZRVL, 0)
+  field(ONST, "moving")  field(ONVL, 1)
+  field(VAL,  0)
+  field(PINI, "YES")
+}
+
+record(ai, "SOFB:MovAvg:Err")
+{
+  field(DESC, "Moving Average Error")
+  field(VAL,  0)
+}
+
+record(ao, "SOFB:MovAvg:WindowSize")
+{
+  field(DESC, "Moving Average Window Size")
+  field(VAL, 5)
+  field(PINI, YES)
+}
+
+record(ao, "SOFB:MovAvg:SmoothingFactor")
+{
+  field(DESC, "Moving Average Smoothing Factor")
+  field(VAL, 0.33)
+  field(PINI, YES)
+}
+
+record(ai, "SOFB:IterationNumber")
+{
+  field(DESC, "Iteration Number")
+  field(VAL,  0)
+}

@@ -1,0 +1,23 @@
+record(waveform, "SOFB:Delta:Pos")
+{
+  field("DESC", "Change in Position")
+  field(NELM, $(BPM_COUNT))
+  field(FTVL, DOUBLE)
+  field(PINI, YES)
+}
+
+record(waveform, "SOFB:Delta:I")
+{
+  field("DESC", "Change in Correctors Currents")
+  field(NELM, $(CORRECTOR_COUNT))
+  field(FTVL, DOUBLE)
+  field(PINI, YES)
+}
+
+record(waveform, "SOFB:Delta:RF")
+{
+  field("DESC", "Change in RF Frequency")
+  field(NELM, $(RF_BUFF_LEN))
+  field(FTVL, DOUBLE)
+  field(PINI, YES)
+}

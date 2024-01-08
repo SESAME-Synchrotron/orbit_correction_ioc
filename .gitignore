@@ -1,0 +1,10 @@
+bin/
+db/
+dbd/
+O.Common/
+O.linux-x86/
+O.linux-x86_64/
+O.vxWorks-mvme5500/
+envPaths
+sav/
+*.swp
