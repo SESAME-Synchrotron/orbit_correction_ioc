@@ -118,3 +118,11 @@ record(ai, "SOFB:IterationNumber")
   field(DESC, "Iteration Number")
   field(VAL,  0)
 }
+
+record(waveform, "SOFB:SingularValues")
+{
+  field("DESC", "Singular Values")
+  field(NELM, 65)
+  field(FTVL, DOUBLE)
+  field(PINI, YES)
+}
