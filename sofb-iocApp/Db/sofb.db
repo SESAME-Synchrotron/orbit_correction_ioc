@@ -119,6 +119,13 @@ record(ai, "SOFB:IterationNumber")
   field(VAL,  0)
 }
 
+record(ai, "SOFB:RegularizationParam")
+{
+  field(DESC, "Regularization Parameter")
+  field(VAL,  0.025)
+  field(PINI, YES)
+}
+
 record(waveform, "SOFB:SingularValues")
 {
   field("DESC", "Singular Values")
