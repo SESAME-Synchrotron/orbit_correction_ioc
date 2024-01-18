@@ -1,9 +1,8 @@
 record(mbbo, "SOFB:EnergyLevel")
 {
-  field(DESC, "Energy Level")
+  field(DESC, "Energy Level in MeV")
   field(ZRST, "800")   field(ZRVL, 800)
   field(ONST, "2500")  field(ONVL, 2500)
-  field(EGU,  "MeV")
   field(VAL,  0)
   field(PINI, "YES")
 }
@@ -19,6 +18,13 @@ record(ao, "SOFB:NumSingularVals")
 {
   field(DESC, "Number of Singular Values")
   field(VAL, 40)
+  field(PINI, YES)
+}
+
+record(ao, "SOFB:CorrectionFactor")
+{
+  field(DESC, "Correction Percentage (0-100%)")
+  field(VAL, 1)
   field(PINI, YES)
 }
 
@@ -96,6 +102,18 @@ record(mbbo, "SOFB:MovAvg:Algo")
 record(ai, "SOFB:MovAvg:Err")
 {
   field(DESC, "Moving Average Error")
+  field(VAL,  0)
+}
+
+record(ai, "SOFB:MovAvg:Err:X")
+{
+  field(DESC, "Moving Average Error in X")
+  field(VAL,  0)
+}
+
+record(ai, "SOFB:MovAvg:Err:Y")
+{
+  field(DESC, "Moving Average Error in Y")
   field(VAL,  0)
 }
 
