@@ -1,3 +1,10 @@
+record(ao, "SOFB:SamplingFrequency")
+{
+  field(DESC, "Sampling Frequency")
+  field(VAL, 10)
+  field(PINI, YES)
+}
+
 record(mbbo, "SOFB:EnergyLevel")
 {
   field(DESC, "Energy Level in MeV")
