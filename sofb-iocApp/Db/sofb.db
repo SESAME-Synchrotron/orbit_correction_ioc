@@ -147,7 +147,7 @@ record(ai, "SOFB:IterationNumber")
 record(ai, "SOFB:RegularizationParam")
 {
   field(DESC, "Regularization Parameter")
-  field(VAL,  0.025)
+  field(VAL,  0.1)
   field(PINI, YES)
 }
 
