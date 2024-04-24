@@ -86,6 +86,20 @@ record(bo, "SOFB:NoSetPv")
   field(PINI, YES)
 }
 
+record(bo, "SOFB:NormalizeInputs")
+{
+  field(DESC, "Normalize Inputs?")
+  field(VAL, 0)
+  field(PINI, YES)
+}
+
+record(bo, "SOFB:ScaleOutputs")
+{
+  field(DESC, "Scale Outputs?")
+  field(VAL, 0)
+  field(PINI, YES)
+}
+
 record(mbbo, "SOFB:CorrectionStatus")
 {
   field(DESC, "Correction Status")
@@ -95,6 +109,23 @@ record(mbbo, "SOFB:CorrectionStatus")
   field(THST, "Debug") field(THVL, 3)
   field(VAL,  0)
   field(PINI, "YES")
+}
+
+record(mbbo, "SOFB:Estimation:Algo")
+{
+  field(DESC, "Estimation Algorithm")
+  field(ZRST, "Direct")     field(ZRVL, 0)
+  field(ONST, "Average")  field(ONVL, 1)
+  field(VAL,  0)
+  field(PINI, "YES")
+}
+
+record(waveform, "SOFB:Estimation:Orbit")
+{
+  field(DESC, "Estimated Orbit")
+  field(NELM, $(BPM_COUNT))
+  field(FTVL, DOUBLE)
+  field(PINI, YES)
 }
 
 record(mbbo, "SOFB:MovAvg:Algo")

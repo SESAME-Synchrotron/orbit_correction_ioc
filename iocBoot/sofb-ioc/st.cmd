@@ -9,7 +9,7 @@ dbLoadDatabase "dbd/sofb-ioc.dbd"
 sofb_ioc_registerRecordDeviceDriver pdbbase
 
 ## Load record instances
-dbLoadRecords("db/sofb.db")
+dbLoadRecords("db/sofb.db", "BPM_COUNT=96")
 dbLoadRecords("db/delta.db", "CORRECTOR_COUNT=64,BPM_COUNT=96,RF_BUFF_LEN=100")
 
 cd "${TOP}/iocBoot/${IOC}"
