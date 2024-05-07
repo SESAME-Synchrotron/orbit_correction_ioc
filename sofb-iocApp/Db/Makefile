@@ -12,6 +12,7 @@ include $(TOP)/configure/CONFIG
 # databases, templates, substitutions like this
 DB += delta.db
 DB += sofb.db
+DB += pid.db
 
 #----------------------------------------------------
 # If <anyname>.db template is not named <anyname>*.template add

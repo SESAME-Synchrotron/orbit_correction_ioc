@@ -120,6 +120,17 @@ record(mbbo, "SOFB:Estimation:Algo")
   field(PINI, "YES")
 }
 
+record(mbbo, "SOFB:Control:Algo")
+{
+  field(DESC, "Control Algorithm")
+  field(ZRST, "None")     field(ZRVL, 0)
+  field(ONST, "P")    field(ONVL, 1)
+  field(TWST, "PI")   field(TWVL, 2)
+  field(THST, "PID")   field(THVL, 3)
+  field(VAL,  0)
+  field(PINI, "YES")
+}
+
 record(waveform, "SOFB:Estimation:Orbit")
 {
   field(DESC, "Estimated Orbit")

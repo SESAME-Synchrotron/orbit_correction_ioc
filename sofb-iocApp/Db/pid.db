@@ -1,0 +1,61 @@
+record(waveform, "SOFB:PID:KP")
+{
+  field("DESC", "KP Gains")
+  field(NELM, $(BPM_COUNT))
+  field(FTVL, DOUBLE)
+  field(PINI, YES)
+}
+
+record(waveform, "SOFB:PID:KI")
+{
+  field("DESC", "KI Gains")
+  field(NELM, $(BPM_COUNT))
+  field(FTVL, DOUBLE)
+  field(PINI, YES)
+}
+
+record(waveform, "SOFB:PID:KD")
+{
+  field("DESC", "KD Gains")
+  field(NELM, $(BPM_COUNT))
+  field(FTVL, DOUBLE)
+  field(PINI, YES)
+}
+
+record(bo, "SOFB:PID:IntegralUntiWindup")
+{
+  field(DESC, "Apply Integral Unti Windup?")
+  field(VAL, 1)
+  field(PINI, YES)
+}
+
+record(ao, "SOFB:PID:Derivative:LPF:CutoffFreq")
+{
+  field(DESC, "PID Derivative Low Pass Filter Cutoff")
+  field(VAL, 1)
+  field(PINI, YES)
+}
+
+record(waveform, "SOFB:PID:P:Term")
+{
+  field("DESC", "P Term")
+  field(NELM, $(BPM_COUNT))
+  field(FTVL, DOUBLE)
+  field(PINI, YES)
+}
+
+record(waveform, "SOFB:PID:I:Term")
+{
+  field("DESC", "I Term")
+  field(NELM, $(BPM_COUNT))
+  field(FTVL, DOUBLE)
+  field(PINI, YES)
+}
+
+record(waveform, "SOFB:PID:D:Term")
+{
+  field("DESC", "D Term")
+  field(NELM, $(BPM_COUNT))
+  field(FTVL, DOUBLE)
+  field(PINI, YES)
+}
